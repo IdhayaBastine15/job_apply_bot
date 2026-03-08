@@ -1,0 +1,52 @@
+# Project Overview: AI Job Application Assistant (LetMeApply-style)
+The goal is to build a robust SaaS application that automates and optimizes the job application process using advanced AI models (GPT-4o / Claude 3.5 Sonnet).
+
+## Core Architecture
+- **Frontend**: Next.js 14/15 (App Router) for a fast, SEO-friendly, and interactive UI.
+- **Backend/API**: Next.js API Routes (Serverless) for seamless communication between the frontend and database.
+- **Database**: PostgreSQL (hosted on Supabase or Neon) with Prisma ORM for type-safe data management.
+- **AI Engine**: OpenAI API (specifically `gpt-4o` for its high intelligence and instruction-following capabilities) or Anthropic API (`claude-3-5-sonnet`) for ATS optimization and personalized writing.
+- **Authentication**: NextAuth.js (Auth.js) supporting Email/Password and Google OAuth.
+- **File Storage**: AWS S3 or Supabase Storage for storing PDF/DOCX resumes.
+- **Styling**: Tailwind CSS with Shadcn UI for a professional, premium aesthetic.
+
+## Feature Implementation Details
+
+### 1. Resume Parsing & Storage
+- Integrate `pdf-parse` or a similar library to extract text from uploaded resumes.
+- Store both the raw text and the structured data (JSON) in PostgreSQL for quick retrieval.
+
+### 2. Job Analysis Engine
+- Users paste job descriptions.
+- The AI extracts:
+  - Technical and soft skills.
+  - Required years of experience.
+  - Key responsibilities.
+  - Specific keywords that are critical for ATS (Applicant Tracking Systems).
+
+### 3. Smart ATS Optimizer (The Core)
+- Use a complex prompt to the AI model that provides:
+  - The original resume text.
+  - The extracted job requirements.
+- The AI will:
+  - Rewrite specific bullet points to reflect the language of the job posting without lying.
+  - Reorder skills to prioritize what the recruiter is looking for.
+  - Calculate a "Match Score" (0-100) based on keyword density and skill alignment.
+
+### 4. Personalized Cover Letter Generator
+- Combines the user's background and the company's culture (from the JD) to craft a "hook" and a strong value proposition.
+
+### 5. Application Tracking System (Internal)
+- A dashboard to track:
+  - Jobs found.
+  - Jobs applied for (with the specific tailored resume and CL).
+  - Interview stages and outcomes.
+
+## Tech Stack Summary
+- **Language**: TypeScript
+- **Framework**: Next.js
+- **UI**: Tailwind CSS, Shadcn UI, Framer Motion
+- **Database**: PostgreSQL + Prisma
+- **Auth**: NextAuth.js
+- **AI**: Groq
+- **Infrastructure**: Vercel (Frontend/API), Supabase (DB/Storage)
