@@ -1,0 +1,91 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+venv/
+env/
+.env
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Build and distribution
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.serverless/
+.fusebox/
+.dynamodb/
+
+# Logs and error reports
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs and Editors
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Testing and Coverage
+coverage/
+.nyc_output/
+.jest/
+.mocha/
+.codecov/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# AI/ML Specific
+.openai/
+.anthropic/
+.google_generative_ai/
+*.onnx
+*.weights
+*.h5
+*.model
+*.pb
+
+# Deployment and environment
+.serverless/
+.terraform/
+.vagrant/
+.docker/
+docker-compose.override.yml
+
+# Other
+temp/
+tmp/
+.history/

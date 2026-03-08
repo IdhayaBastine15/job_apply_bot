@@ -1,0 +1,109 @@
+%=============================================================
+% One-Page Resume — Idhaya Bastine Kennedy
+% Compiler: pdfLaTeX (default in Overleaf)
+%=============================================================
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{newtxtext, newtxmath}
+\usepackage[a4paper, top=0.6in, bottom=0.6in, left=0.7in, right=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parskip}{0pt}
+
+% Section headings
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{7pt}{4pt}
+
+% Bullet list spacing
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt, topsep=2pt, parsep=0pt}
+
+%=============================================================
+\begin{document}
+
+%-------------------------------------------------------------
+% HEADER
+%-------------------------------------------------------------
+\begin{center}
+  {\LARGE\bfseries Idhaya Bastine Kennedy}\\[5pt]
+  \small
+  Dublin 16, Ireland \ $|$ \ +353 892 585 050 \ $|$ \
+  \href{mailto:idhayakennedy3@email.com}{idhayakennedy3@email.com}\\[3pt]
+  \href{https://linkedin.com/in/idhaya-bastine-kennedy-79b15b186}{linkedin.com/in/idhaya-bastine-kennedy} \ $|$ \
+  \href{https://github.com/IdhayaBastine15}{github.com/IdhayaBastine15}\\[3pt]
+  \textit{Right to Work: Ireland (Stamp 1G) --- No sponsorship required}
+\end{center}
+
+%-------------------------------------------------------------
+% PROFILE
+%-------------------------------------------------------------
+\section{Profile}
+\small
+Full Stack Software Engineer with 3+ years of experience designing and delivering production-grade web applications in healthcare startup environments. Specialises in Node.js, React, Angular, and Python, with hands-on experience building REST APIs, microservices, and cloud-native systems on AWS. Proven track record of improving application performance by 20--30\%, supporting international product rollouts, and mentoring junior developers. Holds an MSc in Data Analytics (2:1) from National College of Ireland, Dublin.
+
+%-------------------------------------------------------------
+% TECHNICAL SKILLS
+%-------------------------------------------------------------
+\section{Technical Skills}
+\small
+\begin{tabular}{@{} >{\bfseries}p{3.0cm} @{\hspace{0.3cm}} p{13.0cm} @{}}
+  Languages        & JavaScript (ES6+), TypeScript, Python, SQL \\[3pt]
+  Frontend         & React, Angular, React Native, HTML5, CSS3, Responsive Design \\[3pt]
+  Backend          & Node.js, Express.js, FastAPI, Flask, Django, REST APIs, Microservices \\[3pt]
+  Databases        & PostgreSQL, MySQL, MongoDB, DynamoDB \\[3pt]
+  Cloud \& DevOps  & AWS (EC2, S3, RDS, Lambda, API Gateway), Docker, Kubernetes, Jenkins, CI/CD \\[3pt]
+  Tools            & Git, GitHub, GitHub Copilot, Jasmine, Mocha, Selenium, Agile/Scrum \\
+\end{tabular}
+
+%-------------------------------------------------------------
+% PROFESSIONAL EXPERIENCE
+%-------------------------------------------------------------
+\section{Professional Experience}
+
+\noindent
+{\small\textbf{Full Stack Developer} \hfill \textit{Mar 2021 -- Oct 2023}}\\[-2pt]
+{\small\textit{TRIAS, Bengaluru, India}}
+
+\begin{itemize}\small
+  \item Designed and delivered a production \textbf{Electronic Health Records (EHR) platform} end-to-end, managing patient demographics, medical history, diagnoses, treatment plans, and discharge summaries across GP, therapy, and specialist care departments.
+  \item Supported the \textbf{international rollout} of the EHR system from India to Papua New Guinea, enabling adoption across multiple hospital facilities and contributing to product expansion into a new market.
+  \item Developed and enhanced a \textbf{Laboratory Information System (LIS)} for a Canadian healthcare client, integrating secure data ingestion from medical devices including thermometers, temperature probes, and fetal monitoring systems.
+  \item Improved application performance by \textbf{20--30\%} through backend optimisation, database indexing, query tuning, caching strategies, lazy loading, and reusable component architecture.
+  \item Built and maintained \textbf{microservices-based REST APIs} using Node.js, Express.js, and Python, integrating PostgreSQL, MySQL, and MongoDB for efficient clinical data handling.
+  \item Developed responsive \textbf{Angular and React} frontends aligned with clinical UX workflows, collaborating closely with UX/UI designers.
+  \item Deployed services on \textbf{AWS} (EC2, S3, RDS, Lambda) using CI/CD pipelines via Jenkins and GitHub Actions to ensure reliable releases.
+  \item Contributed to \textbf{architectural decisions and technical roadmap} in direct collaboration with the CEO and CTO.
+  \item Conducted \textbf{code reviews} for junior developers and mentored 4--5 interns, enforcing coding standards and best practices.
+\end{itemize}
+
+\vspace{4pt}
+\noindent
+{\small\textbf{Intern --- Frontend Developer} \hfill \textit{Mar 2021 -- Jul 2021}}\\[-2pt]
+{\small\textit{TRIAS, Bengaluru, India}}
+
+\begin{itemize}\small
+  \item Built a \textbf{Health Analytics module} for the EHR platform; designed and implemented a data processing algorithm to segregate paid/unpaid transactions across UPI, cash, and POS systems --- deployed live in a hospital environment.
+  \item Developed a \textbf{Python Flask web interface} to visualise analytics workflows and support hospital finance operations.
+\end{itemize}
+
+%-------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------
+\section{Education}
+
+\noindent
+{\small\textbf{MSc Data Analytics (2:1)} \hfill \textit{Jan 2024 -- Jan 2025}}\\[-2pt]
+{\small\textit{National College of Ireland, Dublin, Ireland}}
+
+\vspace{5pt}
+\noindent
+{\small\textbf{B.E. Mechanical Engineering} \hfill \textit{2016 -- 2020}}\\[-2pt]
+{\small\textit{Loyola-ICAM College of Engineering and Technology, Chennai, India}}
+
+%=============================================================
+\end{document}

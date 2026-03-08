@@ -1,0 +1,42 @@
+# Project Task List: AI Job Application Assistant
+
+This task list is broken down into prioritized phases to build a robust MVP and then scale functionality.
+
+## Phase 1: Foundation & Infrastructure
+- [ ] Initialize Next.js project with TypeScript, Tailwind CSS, and Shadcn UI.
+- [ ] Set up PostgreSQL database (Supabase/Neon) and initialize Prisma.
+- [ ] Configure NextAuth.js for Google OAuth and Email/Password login.
+- [ ] Set up basic layout with a sidebar and navigation.
+
+## Phase 2: Resume Management (MVP Core)
+- [ ] Build the file upload component (Drag & Drop) for resumes.
+- [ ] Implement text extraction from PDF files (`pdf-parse`).
+- [ ] Create a "Resume Profile" page to view and edit parsed data.
+- [ ] Connect the `Resume` model in Prisma to store user data.
+
+## Phase 3: AI Analysis & Tailoring (High Priority)
+- [ ] Integrate OpenAI API (`gpt-4o` model) for processing requests.
+- [ ] Build the "Analyze Job Description" interface (textarea for pasting JD).
+- [ ] Create the prompt for "Job Requirement Extraction" (JSON output).
+- [ ] **Implement the Smart ATS Optimization logic**:
+    - [ ] Logic to Compare Resume vs. JD.
+    - [ ] AI prompt to suggest bullet point rewrites.
+    - [ ] Keyword matching and "Match Score" calculation.
+- [ ] Build the interface to view the "Tailored Resume" and download it.
+
+## Phase 4: Cover Letter & Job Tracking
+- [ ] Implement "Cover Letter Generator" based on tailored data.
+- [ ] Create the "Job Tracker" dashboard (List and Kanban view).
+- [ ] Add status updates (Applied, Interviewing, Rejected, Offer).
+- [ ] Implement simple "Notes" section for each job application.
+
+## Phase 5: Polishing & Future Features
+- [ ] Add a "Chrome Extension" template for scraping job data (LinkedIn/Indeed).
+- [ ] Implement a "Match Percentage" chart on the dashboard.
+- [ ] Add "Email Reminders" for follow-ups using Brevo or Resend.
+- [ ] Final UI/UX polish with Framer Motion animations.
+
+## Next Steps:
+1. Start with Phase 1: Basic project setup and layout.
+2. Focus on the Resume Parsing logic as it is the data source for the AI.
+3. Ensure the AI prompts are robust and use "gpt-4o" for the highest accuracy in ATS keyword injection.
